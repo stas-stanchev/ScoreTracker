@@ -12,7 +12,7 @@ import com.stano.scoretracker.navigation.NavigationItem;
 import com.stano.scoretracker.ui.adapters.NavigationAdapter;
 
 import butterknife.InjectView;
-import butterknife.OnItemSelected;
+import butterknife.OnItemClick;
 
 
 public class HomeActivity extends BaseActivity {
@@ -32,7 +32,7 @@ public class HomeActivity extends BaseActivity {
         mListView.setAdapter(new NavigationAdapter(this, navigation.getItems()));
     }
 
-    @OnItemSelected(R.id.list)
+    @OnItemClick(R.id.list)
     public void onNavItemClick(int position) {
         NavigationItem item = navigation.getItems().get(position);
         Intent intent = new Intent(this, GamesActivity.class);

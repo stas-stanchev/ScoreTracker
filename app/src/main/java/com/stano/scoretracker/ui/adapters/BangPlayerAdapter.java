@@ -39,7 +39,7 @@ public class BangPlayerAdapter extends ArrayAdapter<Player> {
             holder = (ViewHolder) convertView.getTag();
         }
         Player player = getItem(position);
-        holder.txtLife.setText(player.getLife());
+        holder.txtLife.setText("" + player.getLife());
         holder.txtName.setText(player.getName());
         holder.btnAdd.setTag(position);
         holder.btnRemove.setTag(position);

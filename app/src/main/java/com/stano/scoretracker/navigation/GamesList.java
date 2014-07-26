@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class GamesList implements INavigation {
 
-    private static ArrayList<NavigationItem> items = new ArrayList<NavigationItem>();
+    private static ArrayList<NavigationItem> items = null;
 
 
     @Override
